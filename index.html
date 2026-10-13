@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#c8ff00">
+  <meta name="description" content="Portfolio ของปรียานุช เบี้ยวบังเกืด — Video Editor / Graphic Designer">
+  <meta property="og:title" content="ปรียานุช เบี้ยวบังเกืด — Creative Portfolio">
+  <meta property="og:description" content="Video Editor / Graphic Designer">
+  <meta property="og:type" content="website">
+  <title>ปรียานุช เบี้ยวบังเกืด® — Creative Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Kanit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="top-strip"><span>CREATIVE PORTFOLIO</span><span>VIDEO EDITOR / GRAPHIC DESIGNER ↗</span><span>TH / EN</span></div>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="กลับหน้าแรก">PN<span>®</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#work" data-th="ผลงาน" data-en="WORK">ผลงาน</a>
+      <a href="#about" data-th="เกี่ยวกับฉัน" data-en="ABOUT">เกี่ยวกับฉัน</a>
+      <a href="#education" data-th="การศึกษา" data-en="EDUCATION">การศึกษา</a>
+      <a href="#contact" data-th="ติดต่อ" data-en="CONTACT">ติดต่อ</a>
+    </nav>
+    <div class="header-actions">
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">EN ↗</button>
+      <a class="contact-pill" href="#contact" data-th="ติดต่อฉัน ↗" data-en="CONTACT ME ↗">ติดต่อฉัน ↗</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="เปิดเมนู" aria-expanded="false" type="button">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-pad" id="home">
+      <div class="hero-meta"><span>PORTFOLIO / 2026</span><span>THAILAND · CREATIVE PRODUCTION</span></div>
+      <p class="eyebrow"><span class="live-dot"></span><span data-th="นักสร้างสรรค์ภาพและวิดีโอ" data-en="VISUAL CREATOR & VIDEO EDITOR">นักสร้างสรรค์ภาพและวิดีโอ</span></p>
+      <h1 class="hero-title name-title">ปรียานุช<br><span class="outline-text">เบี้ยวบังเกืด</span><span class="lime-dot">.</span></h1>
+      <div class="hero-bottom">
+        <p class="hero-intro" data-th="ตัดต่อวิดีโอ ออกแบบกราฟิก และสร้างสรรค์ภาพที่เล่าเรื่องได้อย่างมีเอกลักษณ์" data-en="Video editing, graphic design and visual storytelling with a distinctive point of view.">ตัดต่อวิดีโอ ออกแบบกราฟิก และสร้างสรรค์ภาพที่เล่าเรื่องได้อย่างมีเอกลักษณ์</p>
+        <div class="hero-roles"><span>VIDEO EDITOR</span><span>✳</span><span>GRAPHIC DESIGNER</span></div>
+      </div>
+      <a class="scroll-cue" href="#work"><span class="scroll-arrow">↓</span><span data-th="เลื่อนเพื่อชมผลงาน" data-en="SCROLL TO EXPLORE">เลื่อนเพื่อชมผลงาน</span></a>
+      <div class="hero-sticker" aria-hidden="true"><span>IDEAS<br>IN MOTION</span><b>✳</b></div>
+    </section>
+
+    <section class="work-section section-pad" id="work">
+      <div class="section-heading">
+        <div><p class="eyebrow">01 / PORTFOLIO ARCHIVE</p><h2 data-th="ผลงาน<span>.</span>" data-en="MY WORK<span>.</span>">ผลงาน<span>.</span></h2></div>
+        <p class="section-note" data-th="เลือกหมวดหมู่เพื่อชมผลงาน<br>ภาพนิ่งและวิดีโอ" data-en="Choose a category to explore<br>images and videos.">เลือกหมวดหมู่เพื่อชมผลงาน<br>ภาพนิ่งและวิดีโอ</p>
+      </div>
+      <div class="portfolio-category">
+        <h3 class="category-title"><span>01</span><span data-th="ผลงานภาพนิ่ง" data-en="IMAGE PORTFOLIO">ผลงานภาพนิ่ง</span><i>↘</i></h3>
+        <div class="filter-bar" id="imageFilterBar" aria-label="หมวดหมู่ภาพนิ่ง">
+          <button class="filter-btn active" data-filter="ai-image" type="button">AI IMAGE <span>05</span></button>
+          <button class="filter-btn" data-filter="retouch" type="button">RETOUCH <span>05</span></button>
+          <button class="filter-btn" data-filter="promo-image" type="button">PROMO / SHOP / SIGNAGE</button>
+        </div>
+        <div class="project-grid" id="imageGrid" aria-live="polite"></div>
+      </div>
+      <div class="portfolio-category video-category">
+        <h3 class="category-title"><span>02</span><span data-th="ผลงานวิดีโอ" data-en="VIDEO PORTFOLIO">ผลงานวิดีโอ</span><i>↘</i></h3>
+        <div class="filter-bar" id="videoFilterBar" aria-label="หมวดหมู่วิดีโอ">
+          <button class="filter-btn active" data-filter="ai-video" type="button">AI VIDEO <span>05</span></button>
+          <button class="filter-btn" data-filter="self-video" type="button">SELF-SHOT <span>05</span></button>
+          <button class="filter-btn" data-filter="promo-video" type="button">PROMO <span>05</span></button>
+          <button class="filter-btn" data-filter="shop-video" type="button">IN-STORE TV <span>05</span></button>
+        </div>
+        <div class="project-grid" id="videoGrid" aria-live="polite"></div>
+        <p class="drive-note" data-th="วิดีโอใช้ลิงก์ Google Drive ที่เปิดสิทธิ์ให้ผู้มีลิงก์เข้าดูได้ คลิกการ์ดเพื่อเล่นตัวอย่างหรือเปิดไฟล์" data-en="Videos use Google Drive links. Set sharing to anyone with the link, then click a card to preview or open the file.">วิดีโอใช้ลิงก์ Google Drive ที่เปิดสิทธิ์ให้ผู้มีลิงก์เข้าดูได้ คลิกการ์ดเพื่อเล่นตัวอย่างหรือเปิดไฟล์</p>
+      </div>
+      <div class="work-foot"><span>CREATED WITH INTENTION</span><span>MORE GOOD THINGS COMING ↘</span></div>
+    </section>
+
+    <section class="manifesto section-pad">
+      <p class="eyebrow">A LITTLE MANIFESTO / 02</p>
+      <p class="manifesto-text" data-th="ไม่ใช่แค่ทำให้<span>สวย</span> แต่ต้องทำให้คน<span class='manifesto-highlight'>รู้สึก</span> และจดจำได้" data-en="NOT JUST MADE TO LOOK <span>GOOD</span> — MADE TO <span class='manifesto-highlight'>FEEL</span> SOMETHING.">ไม่ใช่แค่ทำให้<span>สวย</span> แต่ต้องทำให้คน<span class="manifesto-highlight">รู้สึก</span> และจดจำได้</p>
+      <div class="manifesto-signature"><span>DESIGN WITH INTENTION.</span><span>✳</span><span>EDIT WITH EMOTION.</span></div>
+    </section>
+
+    <section class="about-section section-pad" id="about">
+      <div class="section-heading">
+        <div><p class="eyebrow">03 / ABOUT THE CREATIVE</p><h2 data-th="เกี่ยวกับฉัน<span>.</span>" data-en="ABOUT ME<span>.</span>">เกี่ยวกับฉัน<span>.</span></h2></div>
+        <span class="big-index">[ PN ]</span>
+      </div>
+      <div class="about-layout">
+        <div class="portrait-frame">
+          <img src="assets/images/profile.jpg" alt="รูปโปรไฟล์ของปรียานุช เบี้ยวบังเกืด" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+          <div class="portrait-placeholder"><span>YOUR<br>PORTRAIT</span><b>✳</b><small>เพิ่มรูปที่ assets/images/profile.jpg</small></div>
+          <span class="frame-label">VIDEO EDITOR / GRAPHIC DESIGNER</span>
+        </div>
+        <div class="about-copy">
+          <p class="about-lead">ปรียานุช เบี้ยวบังเกืด</p>
+          <p data-th="ทำงานด้านตัดต่อวิดีโอและกราฟิกดีไซน์ สนใจการสร้างสรรค์ภาพและสื่อโปรโมตที่สื่อสารตรงจุด ทั้งงานภาพนิ่ง งานวิดีโอ และคอนเทนต์สำหรับหน้าร้านหรือจอแสดงผล" data-en="A video editor and graphic designer focused on visual content, promotional media, still imagery and in-store screen content.">ทำงานด้านตัดต่อวิดีโอและกราฟิกดีไซน์ สนใจการสร้างสรรค์ภาพและสื่อโปรโมตที่สื่อสารตรงจุด ทั้งงานภาพนิ่ง งานวิดีโอ และคอนเทนต์สำหรับหน้าร้านหรือจอแสดงผล</p>
+          <div class="about-facts">
+            <div><span>01 / NAME</span><b>ปรียานุช เบี้ยวบังเกืด</b></div>
+            <div><span>02 / POSITION</span><b>ตัดต่อวีดีโอ / กราฟิกดีไซน์</b></div>
+            <div><span>03 / COMPANY</span><b>บริษัท รับเบอร์ โซล จำกัด</b></div>
+          </div>
+          <a class="text-link" href="#contact" data-th="ติดต่อเพื่อพูดคุยเรื่องงาน ↗" data-en="GET IN TOUCH ABOUT A PROJECT ↗">ติดต่อเพื่อพูดคุยเรื่องงาน ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="education-section section-pad" id="education">
+      <div class="section-heading">
+        <div><p class="eyebrow">04 / EXPERIENCE & EDUCATION</p><h2 data-th="เส้นทางของฉัน<span>.</span>" data-en="MY BACKGROUND<span>.</span>">เส้นทางของฉัน<span>.</span></h2></div>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <span class="timeline-index">01 / EDUCATION</span>
+          <div><p class="timeline-type">ระดับ ปวส.</p><h3>วิทยาลัยเทคนิคสมุทรสาคร</h3><p>สาขาเทคโนโลยีสารสนเทศ</p></div>
+          <span class="timeline-mark">↗</span>
+        </article>
+        <article class="timeline-item">
+          <span class="timeline-index">02 / EDUCATION</span>
+          <div><p class="timeline-type">ระดับ ป.ตรี</p><h3>วิทยาลัยเทคนิคสมุทรสาคร</h3><p>สาขาเทคโนโลยีสารสนเทศ</p></div>
+          <span class="timeline-mark">↗</span>
+        </article>
+        <article class="timeline-item">
+          <span class="timeline-index">03 / EXPERIENCE</span>
+          <div><p class="timeline-type">ประวัติการทำงาน</p><h3>บริษัท รับเบอร์ โซล จำกัด</h3><p>ตำแหน่ง ตัดต่อวีดีโอ / กราฟิกดีไซน์</p></div>
+          <span class="timeline-mark">✳</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="skills-section section-pad" id="skills">
+      <div class="section-heading">
+        <div><p class="eyebrow">05 / TOOLS & SKILLS</p><h2 data-th="ทักษะของฉัน<span>.</span>" data-en="MY TOOLKIT<span>.</span>">ทักษะของฉัน<span>.</span></h2></div>
+        <p class="section-note" data-th="ภาพนิ่ง วิดีโอ และงานโปรโมต<br>จากไอเดียสู่สื่อจริง" data-en="Still imagery, video and promotional content.">ภาพนิ่ง วิดีโอ และงานโปรโมต<br>จากไอเดียสู่สื่อจริง</p>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card"><span>01 / EDIT</span><h3>VIDEO<br>EDITING</h3><p>ตัดต่อวิดีโอ · Storytelling</p><b>✳</b></article>
+        <article class="skill-card"><span>02 / CREATE</span><h3>AI<br>CONTENT</h3><p>AI Image · AI Video</p><b>↗</b></article>
+        <article class="skill-card"><span>03 / DESIGN</span><h3>GRAPHIC<br>DESIGN</h3><p>Retouch · Promotional Design</p><b>▧</b></article>
+        <article class="skill-card"><span>04 / DISPLAY</span><h3>IN-STORE<br>MEDIA</h3><p>Shop Promotion · TV Screen Content</p><b>◎</b></article>
+      </div>
+    </section>
+
+    <section class="contact-section section-pad" id="contact">
+      <p class="eyebrow">06 / CONTACT</p>
+      <h2 data-th="มาสร้างอะไร<br><span>เจ๋ง ๆ</span> กัน" data-en="LET'S MAKE<br>SOMETHING <span>LOUD.</span>">มาสร้างอะไร<br><span>เจ๋ง ๆ</span> กัน</h2>
+      <div class="contact-bottom">
+        <p data-th="ติดต่อเรื่องงานตัดต่อวิดีโอ กราฟิกดีไซน์<br>และงานโปรโมตได้ที่เบอร์ด้านล่าง" data-en="For video editing, graphic design and promotional projects, contact me below.">ติดต่อเรื่องงานตัดต่อวิดีโอ กราฟิกดีไซน์<br>และงานโปรโมตได้ที่เบอร์ด้านล่าง</p>
+        <a class="email-button phone-button" href="tel:0655151820">โทร 065-515-1820 ↗</a>
+      </div>
+      <div class="social-links">
+        <a href="tel:0655151820">PHONE: 0655151820 ↗</a>
+        <button id="copyPhone" type="button">COPY PHONE +</button>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="wordmark" href="#home">PN<span>®</span></a><span>VIDEO EDITOR / GRAPHIC DESIGNER</span><span>© <span id="year"></span> ปรียานุช เบี้ยวบังเกืด</span><a href="#home">BACK TO TOP ↑</a></footer>
+
+  <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-label="รายละเอียดผลงาน" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel">
+      <button class="modal-close" type="button" aria-label="ปิด" data-close-modal>×</button>
+      <div id="modalMedia" class="modal-media"></div>
+      <div class="modal-details"><p class="eyebrow" id="modalCategory"></p><h2 id="modalTitle"></h2><p id="modalDescription"></p><a id="modalExternal" class="text-link" href="#" target="_blank" rel="noreferrer">OPEN PROJECT ↗</a></div>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
